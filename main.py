@@ -10,4 +10,5 @@ def indexhtml():
 def stupidcss():
     return render_template('stupid.css')
 
-app.run()
+if __name__=='__main__':
+    app.run(port=80, debug = True)
